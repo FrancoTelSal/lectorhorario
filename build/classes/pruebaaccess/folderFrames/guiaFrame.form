@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,113,0,0,3,-104"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Component class="java.awt.Label" name="label1">
+      <Properties>
+        <Property name="alignment" type="int" value="1"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Gill Sans MT" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="GUIA"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="900" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="50" width="900" height="560"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/principal se&#xf1;al (3).jpg"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="10" y="10" width="-1" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Sans" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;body&gt;&#xa;&lt;CENTER&gt;Explicacion de cada parte de la pantalla principal del programa&lt;/CENTER&gt;&#xa;&lt;p&gt;&#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;1.- Campos de Ingreso de fecha&lt;/b&gt;, son utilizadas para se&#xf1;alar en que rango de fechas se desea obtener los registros, es necesario minimo ubicar la fecha de comienzo de rango (campo &quot;Desde&quot;), la fecha del sistema sera el final del rango en caso de no ubicar una fecha en el campo &quot;Hasta&quot;. &#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;2.- Boton Procesar&lt;/b&gt;, tal como su nombre menciona, procesa los registros encontrados en la base de datos, para su debido funcionamiento es necesario ubicar primeramente el rango de fechas, como minimo el comienzo del rango. Es necesario mencionar:&#xa;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Entre mas grande el rango de fechas, mas tiempo tomara en procesar los datos. Ej: Un mes de datos = Entre 30 segundos y 2 minutos. Un a&#xf1;o de datos = Entre 10 y 15 minutos.&#xa;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Cada vez que se presione el boton, cargara nuevos registros de la base de datos, por ello es preferible presionarlo una vez segun la necesidad, y en caso de desear otros datos a parte de los que ya se tienen primeramente guarde los ya obtenidos y procese los faltantes.&#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;3.- Tabla de Datos Biometricos&lt;/b&gt;, aqui es donde se reflejaran todos los datos una vez procesados, en este mismo tambien mostraran los datos de una persona en especifico al usar el modulo de busqueda de personas. &#xa;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Cabe mencionar que esta tabla no es editable, esto para evitar posibles errores humanos, si se desea editar los datos puede generar una copia de estos presionando el boton &quot;Generar Tabla Excel&quot;.&#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;4.- Boton &quot;Generar Tabla Excel&quot;&lt;/b&gt;, tal como su nombre menciona, generara un archivo excel de los registros encontrados en la actual tabla del programa, al precionar el boton mostrara una ventana flotante en donde el usuario puede elegir donde desea guardar el archivo excel y como llamarlo.&#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;5.- Listado de Nombres&lt;/b&gt;, por defecto mostrara el texto &quot;Seleccione Nombre&quot; al usuario, al precioarlo mostrara un listado de todos los nombre de aquellas personas que trabajaron en el transcurso de tiempo se&#xf1;alado en el rango de fechas. Una vez seleccionado el nombre se puede generar los registros de esa persona en la tabla usando el boton &quot;Generar Registros&quot;.&#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;6.- Boton &quot;Generar Registros&quot;&lt;/b&gt;, al presionarlo generara los registros existentes de la persona la cual esta seleccionada en el listado de nombres encontrado encima del boton, en caso de no seleccionar un nombre el programa saltara un mensaje el cual pedira al usuario que elija un nombre.&#xa;&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;7.- Boton &quot;Tabla Completa&quot;&lt;/b&gt;, dedicado a generar la tabla completa en caso de que se desea volver a ella si se genero otros registros, como por ejemplo haber generado los registros de una persona en si, pero se desea volver a la tabla con los registros completos.&#xa;&lt;/p&gt;&#xa;&lt;/body&gt;&#xa;&lt;/html&gt;"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="20" y="500" width="830" height="680"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
